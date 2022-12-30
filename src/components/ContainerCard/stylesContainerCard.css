@@ -1,0 +1,43 @@
+.container-images {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-images .box-button {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.container-images .box-button > div:first-child {
+  font-size: 40px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+}
+.container-images .item-imagen {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* border: 2px solid black; */
+  width: 60%;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.item-imagen > ::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: background-color 0.2s ease-in-out;
+  /* border: 1px solid red; */
+}
+.item-imagen > :hover:before {
+  background: rgba(255, 255, 255, 0.6);
+  transition: background-color 0.2s ease-in-out;
+}

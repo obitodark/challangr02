@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container-inicio {
+  background-image: url("../../images/image/image-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  max-width: 100%;
+  /* justify-content: center;
+  align-items: center; */
+}
+.container-inicio div {
+  position: relative;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  border: 1px solid white;
+  padding: 20px;
+  font-weight: 300;
+  width: 400px;
+  height: 200px;
+  top: 40%;
+  left: 10%;
+}
+.container-inicio div h1 {
+  font-weight: inherit;
+  font-size: 50px;
+}
+@media only screen and (max-width: 700px) {
+  .container-inicio {
+  }
+  .container-inicio div {
+    top: 35%;
+    left: 5%;
+    width: 300px;
+    height: 180px;
+    transition: all ease-in;
+  }
+  .container-inicio div h1 {
+    font-size: 40px;
+  }
+}
